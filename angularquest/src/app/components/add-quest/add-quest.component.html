@@ -1,0 +1,35 @@
+<div class="submit-form">
+    <div *ngIf="!submitted">
+      <div class="form-group">
+      <h4>Select a topic</h4>
+         <mat-form-field class="topic-input">
+         	<mat-label for="topic">Topic</mat-label>
+            <mat-select id="topic"
+          		required
+          		[(ngModel)]="quest.topic"
+          		name="topic"
+          		>
+                <mat-option value="List">List</mat-option>
+                <mat-option value="Strings">Strings</mat-option>
+                <mat-option value="Map">Map</mat-option>
+            </mat-select>
+		</mat-form-field>
+    <h4>Enter Problem</h4>
+    <mat-form-field class="problem-input">
+    <mat-label>Add related problem</mat-label>
+	<textarea matInput
+          id="problem"
+          required
+          [(ngModel)]="quest.problem"
+          name="problem"></textarea>
+     </mat-form-field>
+    <button (click)="saveQuest()" mat-raised-button color="primary">Submit</button>
+	</div>
+	</div>
+    <div *ngIf="submitted">
+    <div class="form-group">
+      <h4>Submitted successfully!</h4>
+      <button (click)="newQuest()"  mat-raised-button color="primary">Add More</button>
+      </div>
+      </div>
+      </div>

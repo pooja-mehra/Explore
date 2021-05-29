@@ -1,0 +1,14 @@
+.form-group {
+  top: 10%;
+  left: 10%;
+  text-align:left;
+  margin-left: 20%;
+  margin-top: 50px;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.problem-input {
+  width: 100%;
+}

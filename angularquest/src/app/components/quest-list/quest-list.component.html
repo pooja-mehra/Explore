@@ -1,0 +1,30 @@
+ <div class="split left">
+ <div class="centered" fxLayout="column">
+ <h4>Topics</h4>
+ <mat-list fxFlex class="list-group-item"
+        *ngFor="let topic of topics; let i = index"
+        [class.selected]="topic === selectedTopic"
+        (click)="onSelect(topic)">
+	<mat-list-item>  
+        <span>{{ topic.id}}</span>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-list>
+ </div>
+ </div>
+ 
+<div class="split right" *ngIf="selectedTopic" >
+<div class="centered" fxLayout="column">
+<h4>{{selectedTopic.id}} Details</h4>
+  <mat-list fxFlex class="problem-detail"
+  	*ngFor="let problem of selectedTopic.problem; let i = index">
+  <mat-list-item>
+  <span>{{i+1}}. {{selectedTopic.problem[i]}}</span>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+   </mat-list>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+

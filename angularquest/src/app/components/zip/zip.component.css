@@ -1,0 +1,31 @@
+.form-group {
+  top: 10%;
+  left: 10%;
+  text-align:left;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+.alert p{
+	color:red;
+	font-size:10px;
+}
+.zipzdetailCard{
+	 max-width: 400px;
+	 border:solid;
+	 background-color:#9a82bf;
+}
+.zipzdetailCard:hover{
+	color:yellow;
+}
+.zipTitle{
+	background-color:#8000ff;
+}
+
+.zipErrorCard{
+	max-width: 400px;
+	border:solid;
+	background-color:#ff8080;
+}
+.zipErrorTitle{
+	background-color:#cb363a;
+}

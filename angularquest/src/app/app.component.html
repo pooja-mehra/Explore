@@ -1,0 +1,20 @@
+<mat-toolbar #mattool color ="primary">
+<mat-toolbar-row #mattoolrow>
+    <span><a><mat-icon #maticon (click)="sidenav.toggle()">Explore</mat-icon></a></span>
+</mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+ <mat-sidenav #sidenav role="navigation">
+   <mat-nav-list >
+   <a mat-list-item [routerLink]="'/quests'" (click)="sidenav.toggle()" > Topics </a>
+   <a mat-list-item [routerLink]="'/add'" (click)="sidenav.toggle()"> Add </a>
+   <a mat-list-item [routerLink]="'/zip'" (click)="sidenav.toggle()"> Find </a>
+   <a mat-list-item (click)="sidenav.toggle()" href="" >Home</a>
+   </mat-nav-list>
+ </mat-sidenav>
+ <mat-sidenav-content role="main">
+ <div class="mainContent">
+	<router-outlet></router-outlet>
+ </div>
+ </mat-sidenav-content>
+</mat-sidenav-container>

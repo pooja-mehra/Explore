@@ -1,0 +1,43 @@
+p{
+	padding: 8px 8px 8px 32px;
+  	text-decoration: none;
+  	font-size: 25px;
+}
+
+.mat-list{
+	display:flex;
+}
+.mat-list-item {
+  padding: 8px 8px 8px 32px;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+}
+
+.mat-list-item:hover {
+  color: #808080;
+}
+
+.split {
+  height: 100%;
+  width: 70%;
+  position: fixed;
+  z-index: 1;
+  top: 8;
+  overflow-x: hidden;
+}
+
+.right {
+  right: 0;
+}
+
+.left{
+	left:0;
+}
+
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align:center;
+}
